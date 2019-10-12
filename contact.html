@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Page</title>
+        <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    </head>
+    
+    <body>
+        <!--Begin header-->
+        <div class="headBar" >
+            <header class="headHeader">
+                <h1>Lucas Aho</h1>
+                    <nav>
+                        <div>
+                            <a class="quickNav" href= "index.html">About</a> 
+                        
+                            <a class="quickNav" href= "portfolio.html">Portfolio</a>
+                             
+                            <a id="specNav" href="">Contact</a>     
+                        </div>           
+                    </nav>
+            </header>
+        </div>
+        <!--End header-->
+
+        <!--Begin contact form-->
+        <section>
+            <h2>Contact</h2>
+            <!--pageBorder is used for asthetic-->
+            <div class= "pageBorder"></div> 
+            <div class= "conForm">
+                <!--change mailto to php script to complete form-->
+                <form method="post" action="mailto:aholucas11@gmail.com" name="myemailform">
+                    <label for= "fName">Name</label>
+                    <input type="text" id="fName" name="fullname" placeholder="John Smith">
+                    <label for= "emailAdd">Email Address</label>
+                    <input type= "text" id="emailAdd" placeholder="example@gmail.com">
+                    <label for= "messageIn">Message</label>
+                    <textarea type= "text" id= "messageIn"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>        
+        </section>
+        <!--End contact form-->
+
+        <!--Begin footer-->
+        <footer class= "stickyFoot">
+            <!--regular footer class will not work for this page-->
+            Copyright@
+        </footer>
+        <!--End footer-->
+
+    </body>
+</html>

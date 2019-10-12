@@ -1,0 +1,379 @@
+/*Setting default font and linking background img*/
+body {
+    background-image: url("circle-blues.png");
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #777777;
+    margin: 0px;
+    
+}
+/*Setting wide heading container*/
+.headBar {
+    background-color: #ffffff;
+    border-bottom-color: #cccccc;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    height: 100px;
+    
+    
+}
+
+/*Creating container for heading elements*/
+.headHeader {
+    overflow: auto; 
+    max-width: 960px;
+    margin: auto;
+    padding: 40px;
+    
+}
+
+/*Box for my name*/
+h1 {
+    width: 20%;
+    background-color: #4aaaa5;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    margin-top: -16px;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Container for nav links*/
+nav {     
+    float: right;  
+}
+
+/*About and portfolio links*/
+.quickNav {
+    padding: 7px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #777777;
+    border-right: solid;
+    border-right-color: #777777;
+    border-width: 2px;
+}
+
+/*Contact link (no border)*/
+#specNav {
+    padding: 7px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #777777;
+    
+}
+
+/*Container for all page elements*/
+section {
+    overflow: auto; 
+    background-color: white;
+    max-width: 918px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+   
+}
+
+/*Horizontal page divider*/
+.pageBorder {
+    background-color: gray;
+    height: 2px;
+    margin-bottom: 15px;
+}
+
+/*Page titles*/
+h2 {
+    font-size: 32px;
+    color:  #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/*Profile picture in About*/
+img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/*Bio text container in About*/
+article {
+    font-size: 18px;
+    line-height: 27px;
+    
+}
+
+/*Defaults for portfolio placeholders*/
+.portImg {
+    margin: 20px;
+    width: 250px;
+
+}
+
+/*Creating a row of space for the first row of images in Portfolio*/
+#imgRow1 {
+    margin: 20px;
+    margin-right: 290px;
+    width: 250px;
+}
+
+/*Creating a row of space for the second row of images in Portfolio*/
+#imgRow2 {
+    margin: 20px;
+    margin-right: 290px;
+    width: 250px;
+}
+
+.portRow {
+    box-sizing: content-box; 
+}
+
+/*Code for contact page elements*/
+
+/*Text box defaults in Contact*/
+input[type=text], select, textarea {
+    width: 900px;
+    padding: 10px;
+    margin-bottom:16px;
+    margin-top: 6px;
+    font-size: 16px;
+    
+}
+
+
+/*Labels for contact boxes*/
+label {
+    font-size: 20px;
+}
+
+/*Submit button in Contact*/
+input[type=submit] {
+    background-color: #4aaaa5;
+    width: 125px;
+    height: 50px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    border-color: #cccccc;
+    border: solid;
+}
+
+/*Message box sizing and resize in Contact*/
+#messageIn {
+    width: 900px;
+    height: 200px;
+    resize: vertical;
+
+
+}
+
+/*Footer for this page is special*/
+footer {
+    margin: 0;
+    width: 100%;    
+    border-top:solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 10px;
+    background-color: #666666;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+/*Footer for other two pages*/
+.stickyFoot {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;    
+    border-top:solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 10px;
+    background-color: #666666;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 12px;
+
+}
+/*Media query time!*/
+@media screen and (max-width: 980px) {
+    h1 { 
+        height: 40px;
+        margin-top: -40px;
+        padding: 30px;
+    }
+    section {
+        margin-left:40px;
+        max-width: 550px;
+    }
+    .stickyFoot {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 5px;
+    }
+    .portImg {        
+        margin: 10px;
+        margin-right: 20px;
+        width: 250px;
+        height: 200px;
+        
+    }
+
+    #imgRow1 {
+        margin: 10px;
+        width: 250px;
+        height: 200px;
+    }
+
+    #imgRow2 {
+        margin: 10px;
+        width: 250px;
+        height: 200px;
+    }
+
+    input[type=text], select, textarea {
+        width: 525px;
+    }
+
+    #messageIn {
+        width: 525px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .headBar {
+        height: 75px;
+    }
+    .headHeader {
+        padding: 15px;
+        padding-top: 25px;
+    }
+    h1 {
+        padding: 40px;
+        padding-top: 35px;
+        width: 175px;
+        height: 15px;
+    }
+    section {
+        margin-left:15px;
+        margin-right:15px;
+        max-width: 708px;
+    }
+    .stickyFoot {
+        padding-top: 25px;
+        padding-bottom: 40px;
+        height: 5px;
+    }
+    
+    .portRow {
+        margin-bottom: 20px;
+    }
+    .portImg {        
+        margin: 20px;
+        margin-right: 20px;
+        width: 250px;
+        height: 200px;
+        
+    }
+
+    #imgRow1 {
+        margin: 20px;
+        width: 250px;
+        height: 200px;
+    }
+
+    #imgRow2 {
+        margin: 20px;
+        width: 250px;
+        height: 200px;
+    }
+
+    input[type=text], select, textarea {
+        width: 655px;
+    }
+
+    #messageIn {
+        width: 655px;
+    }
+
+    
+}
+
+@media screen and (max-width: 640px) {
+    .headBar {
+        height: 110px;
+    }
+    h1 {
+        width: 100%;
+        padding: 0px;
+        padding-top: 10px;
+        height: 45px;
+        margin: 0;
+    }
+    nav {
+        padding-top: 5px;
+        margin-top: 10px;
+        margin-right: 155px;
+        width: 250px;
+    }
+    .headHeader {
+        padding: 0;
+        height: 100px;
+    }
+    img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 535px;
+        height: 500px;
+    }
+    section {
+        margin-bottom: 100px;
+    }
+    .stickyFoot {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: 20px;
+    }
+    .portImg {
+        margin-left: 0px;
+        width: 535px;
+        height: 350px;
+    }
+
+    #imgRow1 {
+        margin-left: 0px;
+        width: 535px;
+        height: 350px;
+    }
+
+    #imgRow2 {
+        margin-left: 0px;
+        width: 535px;
+        height: 350px;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    input[type=text], select, textarea {
+        width: 515px;
+    }
+
+    #messageIn {
+        width: 515px;
+    }
+}
